@@ -1,0 +1,163 @@
+.head_title
+{
+    background-color: transparent;
+    float: none;
+}
+#notice{
+    margin-top: 2px;
+    font-size: 20px;
+    background-color:#a52a2a;
+    background-attachment: fixed;
+    color:#f5ff22;
+}
+.container{
+    float: none;
+    background-color: #00ff;
+    height: fit-content;
+    width: fit-content;
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    
+}
+.container_title, .content > h1, h5
+{
+text-align: center;
+
+}
+.heading{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    background-image:url('Images/Erick.jpg');
+    background-position:center;
+}
+.types {
+    list-style: none;
+    text-align: center;
+}
+.types > li a {
+    width: 150px;
+    display: block;
+    list-style: none;
+    text-align: center;
+    color: blue;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #f3f4f7;
+    margin: 5px;
+}
+.types > li a:hover{
+    list-style: none;
+    text-align: center;
+    color: #f3f4f7;
+    background-color: #23ff;
+    text-decoration: underline;
+    font-size: 17px;
+    font-weight: bold;
+    width: 120px;
+    border-radius: 5px;
+}
+.head_menu{
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    background-color: transparent;
+}
+#logo{
+    width: 150px;
+    height: 140px;
+    border-radius: 45px;
+    border: 1px solid #23ff;
+    background-image: url('Images/EllisIcon.PNG');
+    background-size: contain;
+    box-shadow: 5px 2px 3px goldenrod;
+    background-color: aliceblue;
+    float: left;
+    margin-right: 25px;
+    
+}
+.paragraph{
+    background-color: aquamarine;
+    height: fit-content;
+    border: 2px solid #000;
+    margin: 5px;
+}
+.footer a{
+    color: #23ff;
+    text-decoration: none;
+    font-size: 25px;
+}
+@media(min-width: 1200px){
+   
+    .head_menu{
+        width: fit-content;
+        height: fit-content;
+        border: 1px solid rgb(20, 18, 18);
+        margin-left: auto;
+        background-color: transparent;
+    }
+}
+@media(min-width: 857px) and (max-width: 1199px){
+   
+    .content{
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        
+    }
+    #logo{
+        width: 120px;
+        height: 106px;
+        border-radius: 25px;
+        border: 1px solid #23ff;
+        background-image: url('Images/EllisIcon.PNG');
+        background-position: center;
+        background-repeat:no-repeat;
+        background-size: contain;
+        box-shadow: 3px 2px 5px goldenrod;
+        background-color: #fff;
+        float: left;
+        margin-right: 25px;
+        
+    }
+    .paragraph{
+        background-color: aquamarine;
+        height: fit-content;
+       border:1px solid #000;
+        margin: 5px;
+    }
+    div > #P3{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+@media(min-width: 75px) and (max-width:856px){
+   
+   .content{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+   }
+   #logo{
+    visibility: hidden;
+   }
+   .heading{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    background-image:url('Images/EllisIcon.PNG');
+    background-position:center;
+}
+   #script{
+    font-size: 35px;
+    color: #fff;
+    position:absolute;
+    background-color: #000;
+    opacity: .7;
+    border-radius: 25%;
+   }
+}
